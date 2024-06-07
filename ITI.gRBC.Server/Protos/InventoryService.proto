@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+option csharp_namespace = "ITI.gRBC.Server.Protos";
+
+import "google/protobuf/timestamp.proto";
+
+service InventoryService{
+	rpc getProductById(ProductId) returns (ProductBooleanResponse);
+	rpc addProduct(InsertProduct) returns (Product);
+	rpc updateProduct(Product) returns (Product);
+	rpc addBulkProducts(stream Product) returns (ProductCount);
+	rpc getProductReport(Critiria) returns (stream Product);
+	rpc getProductCount(ProductCountRequest) returns (ProductCount);
+}
+
+message ProductId{
+	int32 id = 1;
+}
+
+message ProductBooleanResponse{
+	bool flag = 1;
+}
+
+message InsertProduct{
+	string name = 1;
+	int32 price = 2;
+	int32 quantity = 3;
+	Category category = 4;
+	google.protobuf.Timestamp ExpireDate = 5;
+}
+
+message Product{
+	int32 id = 1;
+	string name = 2;
+	int32 price = 3;
+	int32 quantity = 4;
+	Category category = 5;
+	google.protobuf.Timestamp ExpireDate = 6;
+}
+
+message ProductCount{
+	int32 count = 1;
+}
+
+message Critiria{
+	bool isOrderByPrice = 1;
+	bool isGroupedByCategory = 2;
+	Category categoryFilter = 3; 
+}
+
+enum Category{
+	Android = 0;
+	IPhone = 1;
+	Tablet = 2;
+	Laptop = 3;
+}
+
+message ProductCountRequest{
+
+}

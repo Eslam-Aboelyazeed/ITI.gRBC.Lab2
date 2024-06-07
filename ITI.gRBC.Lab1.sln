@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITI.gRBC.Server", "ITI.gRBC.Server\ITI.gRBC.Server.csproj", "{C135656D-6D41-4C1C-B7BA-FFFC2E12596D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITI.gRBC.Client", "ITI.gRBC.Client\ITI.gRBC.Client.csproj", "{FBDE90AC-5818-420F-8CC2-2A8D5BCFAF11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C135656D-6D41-4C1C-B7BA-FFFC2E12596D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C135656D-6D41-4C1C-B7BA-FFFC2E12596D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C135656D-6D41-4C1C-B7BA-FFFC2E12596D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C135656D-6D41-4C1C-B7BA-FFFC2E12596D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDE90AC-5818-420F-8CC2-2A8D5BCFAF11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDE90AC-5818-420F-8CC2-2A8D5BCFAF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDE90AC-5818-420F-8CC2-2A8D5BCFAF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDE90AC-5818-420F-8CC2-2A8D5BCFAF11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F51B5E6-8854-4E77-9733-36D13BCBD55F}
+	EndGlobalSection
+EndGlobal
